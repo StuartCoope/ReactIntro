@@ -1,12 +1,14 @@
 var React = require('react');
-var Greeting = require('./greeting');
+var Developers = require('./developers');
 
 var App = React.createClass({
     render: function() {
       return (
-        <div>
-          <h3>My App</h3>
-          <Greeting name="Andy" />
+        <div className='container'>
+          <div className='page-header'>
+            <h1>Kaiju <span className='glyphicon glyphicon-globe'/></h1>
+          </div>
+          <Developers />
         </div>
       )
     }
